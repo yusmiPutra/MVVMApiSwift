@@ -1,24 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController providesPresentationContextTransitionStyle="YES" modalPresentationStyle="overCurrentContext" id="BYZ-38-t0r" customClass="ViewController" customModule="MVVM_Api" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rG3-WX-UcM">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="News Api" id="fmx-aD-vvg"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vBN-40-0mP">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="139" id="crX-7X-rsi" customClass="NewsCell" customModule="MVVM_Api" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="139"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="crX-7X-rsi" id="voJ-8C-csU">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="139"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="judul" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rC6-td-aKk">
+                                                    <rect key="frame" x="16" y="85" width="361" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-H4-s0w">
+                                                    <rect key="frame" x="114" y="11" width="165" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="lwu-54-9VZ"/>
+                                                        <constraint firstAttribute="width" constant="165" id="snw-np-2tS"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rC6-td-aKk" firstAttribute="leading" secondItem="voJ-8C-csU" secondAttribute="leading" constant="16" id="1zq-Al-UWg"/>
+                                                <constraint firstItem="rC6-td-aKk" firstAttribute="top" secondItem="dYb-H4-s0w" secondAttribute="bottom" constant="10" id="4oo-qP-y37"/>
+                                                <constraint firstAttribute="bottom" secondItem="rC6-td-aKk" secondAttribute="bottom" constant="10" id="Fsr-fY-LCt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dYb-H4-s0w" secondAttribute="trailing" constant="94" id="L6N-qu-pkb"/>
+                                                <constraint firstItem="dYb-H4-s0w" firstAttribute="top" secondItem="voJ-8C-csU" secondAttribute="topMargin" id="Qaz-Z2-EpT"/>
+                                                <constraint firstItem="dYb-H4-s0w" firstAttribute="leading" secondItem="voJ-8C-csU" secondAttribute="leadingMargin" constant="94" id="YAl-Re-ZDY"/>
+                                                <constraint firstAttribute="trailing" secondItem="rC6-td-aKk" secondAttribute="trailing" constant="16" id="r7W-q3-Juk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageNews" destination="dYb-H4-s0w" id="myv-c2-rGR"/>
+                                            <outlet property="judulNews" destination="rC6-td-aKk" id="7tg-em-5Ia"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="xPb-bk-s3O"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="F0k-c9-V6J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rG3-WX-UcM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4oB-qk-TsP"/>
+                            <constraint firstItem="rG3-WX-UcM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="COr-KQ-qgE"/>
+                            <constraint firstItem="vBN-40-0mP" firstAttribute="top" secondItem="rG3-WX-UcM" secondAttribute="bottom" id="KED-w7-mGw"/>
+                            <constraint firstItem="vBN-40-0mP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MJ1-V0-ZcW"/>
+                            <constraint firstItem="rG3-WX-UcM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tmz-b4-bdo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vBN-40-0mP" secondAttribute="bottom" id="VM1-HH-geP"/>
+                            <constraint firstItem="vBN-40-0mP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hFD-lz-lVJ"/>
+                        </constraints>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="393" height="852"/>
+                    <connections>
+                        <outlet property="tableViewNews" destination="vBN-40-0mP" id="RVk-Oa-QKq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-645" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

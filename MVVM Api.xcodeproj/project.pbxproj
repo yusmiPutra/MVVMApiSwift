@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFDDB1570BA150815E32C8EF /* Pods_MVVM_Api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B17C2445DE2CFDD78F891B /* Pods_MVVM_Api.framework */; };
 		C69219BC2A724FAA007F8D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219BB2A724FAA007F8D06 /* AppDelegate.swift */; };
 		C69219BE2A724FAA007F8D06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219BD2A724FAA007F8D06 /* SceneDelegate.swift */; };
 		C69219C02A724FAA007F8D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219BF2A724FAA007F8D06 /* ViewController.swift */; };
 		C69219C32A724FAA007F8D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69219C12A724FAA007F8D06 /* Main.storyboard */; };
 		C69219C52A724FAC007F8D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69219C42A724FAC007F8D06 /* Assets.xcassets */; };
 		C69219C82A724FAC007F8D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69219C62A724FAC007F8D06 /* LaunchScreen.storyboard */; };
+		C69219D32A725157007F8D06 /* model_news.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219D22A725157007F8D06 /* model_news.swift */; };
+		C69219D62A7254C5007F8D06 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219D52A7254C5007F8D06 /* Bindable.swift */; };
+		C69219D92A725642007F8D06 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219D82A725642007F8D06 /* NewsService.swift */; };
+		C69219DC2A7258B3007F8D06 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219DB2A7258B3007F8D06 /* NewsViewModel.swift */; };
+		C69219DE2A725E33007F8D06 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219DD2A725E33007F8D06 /* NewsCell.swift */; };
+		C69219E02A726AB8007F8D06 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69219DF2A726AB8007F8D06 /* constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		208A4A6E3065DAFEA0D49EC8 /* Pods-MVVM Api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Api.debug.xcconfig"; path = "Target Support Files/Pods-MVVM Api/Pods-MVVM Api.debug.xcconfig"; sourceTree = "<group>"; };
 		C69219B82A724FAA007F8D06 /* MVVM Api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69219BB2A724FAA007F8D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69219BD2A724FAA007F8D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,14 @@
 		C69219C42A724FAC007F8D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69219C72A724FAC007F8D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C69219C92A724FAC007F8D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69219D22A725157007F8D06 /* model_news.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model_news.swift; sourceTree = "<group>"; };
+		C69219D52A7254C5007F8D06 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		C69219D82A725642007F8D06 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		C69219DB2A7258B3007F8D06 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		C69219DD2A725E33007F8D06 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C69219DF2A726AB8007F8D06 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		DFFACE878228509779D13312 /* Pods-MVVM Api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Api.release.xcconfig"; path = "Target Support Files/Pods-MVVM Api/Pods-MVVM Api.release.xcconfig"; sourceTree = "<group>"; };
+		E7B17C2445DE2CFDD78F891B /* Pods_MVVM_Api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDDB1570BA150815E32C8EF /* Pods_MVVM_Api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C104BC1D458239B6ECC512B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208A4A6E3065DAFEA0D49EC8 /* Pods-MVVM Api.debug.xcconfig */,
+				DFFACE878228509779D13312 /* Pods-MVVM Api.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C69219AF2A724FAA007F8D06 = {
 			isa = PBXGroup;
 			children = (
 				C69219BA2A724FAA007F8D06 /* MVVM Api */,
 				C69219B92A724FAA007F8D06 /* Products */,
+				C104BC1D458239B6ECC512B3 /* Pods */,
+				FCEF5FE6C240D84F00C197DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,69 @@
 		C69219BA2A724FAA007F8D06 /* MVVM Api */ = {
 			isa = PBXGroup;
 			children = (
+				C69219D72A725632007F8D06 /* service */,
+				C69219D42A7254A1007F8D06 /* utils */,
+				C69219D12A725029007F8D06 /* viewmodel */,
+				C69219D02A724FFF007F8D06 /* model */,
+				C69219CF2A724FCC007F8D06 /* view */,
 				C69219BB2A724FAA007F8D06 /* AppDelegate.swift */,
 				C69219BD2A724FAA007F8D06 /* SceneDelegate.swift */,
-				C69219BF2A724FAA007F8D06 /* ViewController.swift */,
 				C69219C12A724FAA007F8D06 /* Main.storyboard */,
 				C69219C42A724FAC007F8D06 /* Assets.xcassets */,
 				C69219C62A724FAC007F8D06 /* LaunchScreen.storyboard */,
 				C69219C92A724FAC007F8D06 /* Info.plist */,
 			);
 			path = "MVVM Api";
+			sourceTree = "<group>";
+		};
+		C69219CF2A724FCC007F8D06 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C69219BF2A724FAA007F8D06 /* ViewController.swift */,
+				C69219DD2A725E33007F8D06 /* NewsCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C69219D02A724FFF007F8D06 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C69219D22A725157007F8D06 /* model_news.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C69219D12A725029007F8D06 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				C69219DB2A7258B3007F8D06 /* NewsViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		C69219D42A7254A1007F8D06 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C69219D52A7254C5007F8D06 /* Bindable.swift */,
+				C69219DF2A726AB8007F8D06 /* constant.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C69219D72A725632007F8D06 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				C69219D82A725642007F8D06 /* NewsService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		FCEF5FE6C240D84F00C197DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7B17C2445DE2CFDD78F891B /* Pods_MVVM_Api.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C69219CC2A724FAC007F8D06 /* Build configuration list for PBXNativeTarget "MVVM Api" */;
 			buildPhases = (
+				152F742FD31B5E5B14A21067 /* [CP] Check Pods Manifest.lock */,
 				C69219B42A724FAA007F8D06 /* Sources */,
 				C69219B52A724FAA007F8D06 /* Frameworks */,
 				C69219B62A724FAA007F8D06 /* Resources */,
+				6A5852A8BC0D7DE3564C1C7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +217,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		152F742FD31B5E5B14A21067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM Api-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A5852A8BC0D7DE3564C1C7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM Api/Pods-MVVM Api-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM Api/Pods-MVVM Api-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM Api/Pods-MVVM Api-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C69219B42A724FAA007F8D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C69219D92A725642007F8D06 /* NewsService.swift in Sources */,
+				C69219E02A726AB8007F8D06 /* constant.swift in Sources */,
+				C69219D62A7254C5007F8D06 /* Bindable.swift in Sources */,
+				C69219D32A725157007F8D06 /* model_news.swift in Sources */,
 				C69219C02A724FAA007F8D06 /* ViewController.swift in Sources */,
+				C69219DC2A7258B3007F8D06 /* NewsViewModel.swift in Sources */,
 				C69219BC2A724FAA007F8D06 /* AppDelegate.swift in Sources */,
+				C69219DE2A725E33007F8D06 /* NewsCell.swift in Sources */,
 				C69219BE2A724FAA007F8D06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +414,13 @@
 		};
 		C69219CD2A724FAC007F8D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208A4A6E3065DAFEA0D49EC8 /* Pods-MVVM Api.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVVM Api/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,11 +443,13 @@
 		};
 		C69219CE2A724FAC007F8D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFFACE878228509779D13312 /* Pods-MVVM Api.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVVM Api/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
